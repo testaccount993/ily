@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.bg-red {
+    background: #ffe4e1;
+}
+
+.bg-green {
+    background: #e5ffe7;
+}
+
+.bg-yellow {
+    background: #fff9dc;
+}
+
+body {
+    background-color: #f1f1f1;
+    color: #0f141e;
+
+    font-size: 16px;
+    font-weight: normal;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+        СТАНДАРТНОЕ ЗАДАНИЕ ШРИФТА 
+    */
+    font-family: 'Roboto', sans-serif;
+
+    /* font: normal 16px 'Roboto', sans-serif;  
+        МОЖНО ОБЪЕДИНЯТЬ
+    */ 
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: grey;
+}
+
+/* #id { 
+    width: 200px;
+    border-radius: 28px;
+    ДЛЯ АЙДИ СТАВИТСЯ РЕШЕТКА 
+} */
+
+.avatar {
+    width: 250px;
+    border-radius: 28px;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25); /* ТЕНИ У КАРТИНКИ */
+}
+
+.info {
+    margin-bottom: 20px;
+    display: flex;
+}
+
+@media(max-width: 700px) {
+    .info {
+        display: block;
+        text-align: center;
+    }
+}
+
+.info-text {
+    margin-left: 40px;
+}
+
+.info-text h4 {
+    margin-bottom: 15px;
+}
+
+.info p { /* ОБРАЩЕНИЕ КО ВСЕМ ПАРАГРАФ С КЛАССОМ ИНФО */
+    color: #86898f;
+    margin: 0 0 5px 0;
+    font-style: italic; /* КУРСИВ */
+    font-weight: bold;
+    text-decoration: none;
+    /* text-transform: lowercase;  МЕНЯЕТ РЕГИСТР ТЕКСТА(ЗАГЛАВНЫЕ МАЛЕНЬКИЕ БУКВЫ ИТД*/
+    /* letter-spacing: 5px; ИНТЕРВАЛ МЕЖДУ БУКВАМИ */
+    /* word-spacing: 42px; ИНТЕРВАЛ МЕЖДУ СЛОВАМИ */
+}
+
+.container {
+    max-width: 750px;
+    margin: auto;
+    padding-top: 30px;
+}
+
+/* .social {
+    background-color: lime;
+    /* padding: 15px; ОТСТУПЫ СРАЗУ ВЕЗДЕ */
+    /* padding: 15px 40px; ОТСТУПЫ ВЕРХ-НИЗ ПРАВО-ЛЕВО */
+    /* padding: 15px 20px 25px 30px; ОТСТУПЫ ВЕРХ-ПРАВО-НИЗ-ЛЕВО */
+    /* padding: 10px;
+    border: 5px solid gray;
+    margin: 15px; */
+/* } */
+
+.card {
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.card h2 {
+    margin-bottom: 10px;
+}
+
+.list {
+    padding: 0 20px;
+}
+
+.list li {
+    color: #86898f;
+    margin-bottom: 10px;
+}
+
+.table {
+    width: 100%;
+}
+
+.table th {
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+.table td {
+    padding-bottom: 8px;
+}
+
+.table tr:nth-child(4) td:nth-child(2) {
+    text-align: left;
+    padding-left: 1.5%;  
+}
+
+.table td:nth-child(2),
+.table td:nth-child(3) {
+    color: #86898f;
+    padding-left: 18px;
+}
+
+/* .table tr:nth-child(even) {
+    background: red;
+} */ 
+
+.link-list {
+    padding: 0;
+    list-style: none;
+}
+
+.link-list a {
+    color: black;
+}
+
+.link-list li {
+    color: #86898f;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+.contact h2 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    color: #86898f;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #ccc;
+    color: black;
+    padding: 12px 0 3px;
+    outline: none;
+    font-family: inherit;
+}
+
+.row {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.row > .form-group {
+    width: 50%;
+}
+
+.row > .form-group:first-child {
+    margin-right: 25px;
+}
+
+.btn {
+    background-color: #111;
+    color: white;
+    border: none;
+    font-family: inherit;
+    cursor: pointer;
+    padding: 15px 20px;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
